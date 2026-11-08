@@ -303,6 +303,8 @@ h3,
   letter-spacing: -0.03em;
   line-height: 1.08;
   text-wrap: balance;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 h1 {
@@ -457,7 +459,7 @@ h1 em {
 
 .preview-title {
   margin: 0.3rem 0 1rem;
-  font-size: 1.85rem;
+  font-size: clamp(1.55rem, 7.2vw, 1.85rem);
 }
 
 .preview-list {
@@ -483,13 +485,15 @@ h1 em {
 }
 
 .preview-chip {
-  display: inline-flex;
+  display: inline-block;
+  max-width: 100%;
   margin: 1.15rem 0 0;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
   color: var(--gold-ink);
   background: var(--gold);
   letter-spacing: 0.06em;
+  overflow-wrap: break-word;
 }
 
 .preview-note {
