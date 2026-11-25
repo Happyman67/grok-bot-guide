@@ -618,9 +618,15 @@ section[id] {
 
 .card-mail,
 .card-cal,
+.card-travel,
+.card-meet,
 .card-routine,
 .card-services {
   grid-column: span 3;
+}
+
+.card p + p {
+  margin-top: 0.75rem;
 }
 
 .card:hover {
@@ -791,6 +797,8 @@ section[id] {
   .card,
   .card-mail,
   .card-cal,
+  .card-travel,
+  .card-meet,
   .card-routine,
   .card-services {
     grid-column: auto;
